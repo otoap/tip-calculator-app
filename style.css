@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+body {
+    background-color: #c5e4e7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    padding: 32px;
+    background-color: #ffff;
+}
+
+#bill {
+    background-image: url("./images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    padding: 6px 17.5px 6px 19.3px;
+    border-radius: 5px;
+    background-color: #f3f9fa;
+    border: none;
+    color: #00474b;
+    font-size: 24px;
+    text-align: end;
+
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5e7a7d;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

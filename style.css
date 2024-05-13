@@ -11,13 +11,16 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between
+}
+
+main {
+    border-radius: 25px;
 }
 
 .top-section {
     display: flex;
     flex-direction: column;
-    width: 375px;
     padding: 32px;
     background-color: #ffff;
 }
@@ -32,14 +35,21 @@ body {
     border: none;
     color: #00474b;
     font-size: 24px;
+    font-weight: bold;
     text-align: end;
-
+    outline: none;
+    margin-top: 6px;
+    max-width: 311px;
 }
 
-label {
+label, span {
     font-size: 16px;
     font-weight: bold;
     color: #5e7a7d;
+}
+
+span {
+    margin-top: 32px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -52,4 +62,65 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+button {
+    padding: 6px 17.5px 6px 16.3px;
+    border-radius: 5px;
+    background-color: #00474b;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    width: 146.6px;
+}
+
+#custom {
+    width: 146.6px;
+    height: 48px;
+    padding: 6px 17.3px 6px 19px;
+    border-radius: 5px;
+    background-color: #f3f9fa;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px 16.6px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+input {
+    color: #00474b;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: end;
+    outline: none;
+    margin-top: 6px;
+    max-width: 311px;
+    border: none;
+    background-color: #f3f9fa;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #c5e4e7;
+}
+
+#custom::placeholder {
+    color: #547878;
+}
+
+#people {
+    padding: 6px 17px;
+    background-image: url("./images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: 15px;
 }

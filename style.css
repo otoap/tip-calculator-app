@@ -15,7 +15,9 @@ body {
 }
 
 main {
-    border-radius: 25px;
+    border-radius: 25px 25px 0 0;
+    background-color: #ffff;
+    overflow: hidden;
 }
 
 .top-section {
@@ -123,4 +125,59 @@ input::placeholder {
     background-image: url("./images/icon-person.svg");
     background-repeat: no-repeat;
     background-position: 15px;
+}
+
+/*bottom section*/
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.bottom-section {
+    padding: 37px 22px 24px 24px;
+    border-radius: 15px;
+    background-color: #00474b;
+    margin: 32px 24px;
+}
+
+h3 span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #7f9d9f;
+}
+
+.bottom-section div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total {
+    margin-top: 20px;
+}
+
+div .tip-amount, div .total-per-person {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.67px;
+    color: #26c2ae;
+    margin: 0;
+}
+
+.reset {
+    padding: 9px 32px 9px 33px;
+    border-radius: 5px;
+    background-color: #26c2ae;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #00474b;
+    width: 100%;
+    margin-top: 32px;
+}
+
+button {
+    cursor: pointer;
 }

@@ -206,3 +206,73 @@ button {
     cursor: pointer;
 }
 
+
+@media (min-width:1440px) {
+    main {
+        display: flex;
+        border-radius: 25px;
+    }
+
+    div .tip-amount, div .total-per-person {
+        font-size: 48px;
+    }
+
+    .top-section {
+        padding: 45px 48px;
+        position: relative;
+    }
+
+    .buttons {
+        grid-template-columns: auto auto auto;
+        margin-bottom: 40px;
+    }
+
+    button {
+        width: 117px;
+    }
+
+    #custom {
+        width: 117px;
+        padding: 6px 15px;
+    }
+
+    #bill, #people {
+        max-width: unset;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .bottom-section {
+        width: 413px;
+    }
+
+    .zero-bill {
+        right: 50px;
+    }
+
+    .zero-people {
+        bottom: 102px;
+        right: 50px;
+    }
+
+    span {
+        margin-top: 40px;
+    }
+
+    .bottom-section {
+        padding: 40px;
+    }
+
+    .reset {
+        margin-top: 126px;
+    }
+
+    input {
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #9fe8df;
+        color: #00474b;
+    }
+}

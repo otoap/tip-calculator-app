@@ -23,7 +23,7 @@ let tipPerson = 0;
 let totalPerson = 0;
 
 bill.addEventListener("input", (event)=> {
-    if(event.target.value ==0) {
+    if(event.target.value <=0) {
         billValue = 0;
         bill.style.border = "2px #e17052 solid";
         zeroBill.style.display = "block";
@@ -57,11 +57,11 @@ custom.addEventListener("input", (event) => {
 })
 
 numPpl.addEventListener("input", (event)=> {
-    if(event.target.value == 0) {
+    if(event.target.value <= 0) {
         numPpl.style.border = "2px #e17052 solid";
         zeroPeople.style.display = "block";
-        tip.innerHTML = "$0"
-        total.innerHTML = "$0"
+        tip.innerHTML = "$0.00"
+        total.innerHTML = "$0.00"
     }else{
         numPpl.style.border = "solid 2px #26c2ae";
         people = parseInt(event.target.value);
@@ -78,8 +78,8 @@ reset.addEventListener("click", ()=> {
     bill.value = "";
     custom.value = "";
     numPpl.value = "";
-    tip.innerHTML = "$0"
-    total.innerHTML = "$0"
+    tip.innerHTML = "$0.00"
+    total.innerHTML = "$0.00"
 })
 
 

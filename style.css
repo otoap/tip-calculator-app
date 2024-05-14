@@ -29,6 +29,7 @@ main {
     flex-direction: column;
     padding: 32px;
     background-color: #ffff;
+    position: relative;
 }
 
 #bill {
@@ -219,7 +220,6 @@ button {
 
     .top-section {
         padding: 45px 48px;
-        position: relative;
     }
 
     .buttons {

@@ -27,8 +27,8 @@ bill.addEventListener("input", (event)=> {
         billValue = 0;
         bill.style.border = "2px #e17052 solid";
         zeroBill.style.display = "block";
-        tip.innerHTML = "$0"
-        total.innerHTML = "$0"
+        tip.innerHTML = "$0.00"
+        total.innerHTML = "$0.00"
     }else {
         bill.style.border = "solid 2px #26c2ae";
         billValue = parseInt(event.target.value);

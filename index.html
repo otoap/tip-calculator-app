@@ -11,12 +11,15 @@
     <link rel="icon" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css">
     <title>tip calculator</title>
+
+    <script src="./main.js" defer></script>
 </head>
 <body>
-    <img src="./images/logo.svg" alt="logo image">
+    <img class="logo" src="./images/logo.svg" alt="logo image">
     <main>
         <section class="top-section">
             <label for="bill">Bill</label>
+            <p class="zero-bill">Bill be zero</p>
             <input type="number" id="bill" name="billAmount" placeholder="0" inputmode="numeric">
 
             <span>Select Tip %</span>
@@ -30,6 +33,7 @@
             </div>
 
             <label for="people">Number of People</label>
+            <p class="zero-people">Can't be zero</p>
             <input type="number" name="numPeople" id="people" placeholder="0">
         </section>
         <section class="bottom-section">
@@ -42,7 +46,7 @@
                 <span class="total-per-person">$0</span>
             </div>
 
-            <button class="reset">RESET</button>
+            <button type="reset" class="reset">RESET</button>
         </section>
     </main>
 </body>

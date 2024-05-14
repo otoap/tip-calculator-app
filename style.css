@@ -14,6 +14,10 @@ body {
     justify-content: space-between
 }
 
+.logo {
+    margin: 50px 0 40px;
+}
+
 main {
     border-radius: 25px 25px 0 0;
     background-color: #ffff;
@@ -34,7 +38,7 @@ main {
     padding: 6px 17.5px 6px 19.3px;
     border-radius: 5px;
     background-color: #f3f9fa;
-    border: none;
+    border: 2px #fff solid;
     color: #00474b;
     font-size: 24px;
     font-weight: bold;
@@ -89,6 +93,7 @@ button {
     font-size: 24px;
     font-weight: bold;
     text-align: right;
+    margin: 0;
 }
 
 .buttons {
@@ -107,7 +112,7 @@ input {
     outline: none;
     margin-top: 6px;
     max-width: 311px;
-    border: none;
+    border: 2px #fff solid;
     background-color: #f3f9fa;
     border-radius: 5px;
 }
@@ -125,6 +130,25 @@ input::placeholder {
     background-image: url("./images/icon-person.svg");
     background-repeat: no-repeat;
     background-position: 15px;
+}
+
+.zero-people {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e17457;
+    position: absolute;
+    bottom: 92px;
+    right: 40px;
+    display: none;
+}
+
+.zero-bill {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e17457;
+    position: absolute;
+    right: 40px; 
+    display: none;
 }
 
 /*bottom section*/
@@ -181,3 +205,4 @@ div .tip-amount, div .total-per-person {
 button {
     cursor: pointer;
 }
+
